@@ -14,6 +14,8 @@ This include can be added to the header or placed inline before the script is in
 
 ## Functions
 
+### load
+
 ```javascript
 data = useful.urls.load(url);
 ```
@@ -23,6 +25,8 @@ Converts the query parameters from a URL into an object of name-value pairs.
 **data : {object}** - An object filled with name-value pairs. e.g. {foo:bar}
 
 **url : {string}** - An URL with query parameters. *e.g. http://domain.com/?foo=bar*
+
+### save
 
 ```javascript
 url = useful.urls.save(path, data);
@@ -35,6 +39,8 @@ Saves an object of name-value pairs as the query parameters of a URL.
 **path : {string}** - An URL without query parameters. *e.g. http://domain.com/*
 
 **data : {object}** - An object filled with name-value pairs. *e.g. {foo:bar}*
+
+### replace
 
 ```javascript
 url = useful.urls.replace(url, name, value);
