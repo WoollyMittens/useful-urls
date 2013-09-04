@@ -4,15 +4,15 @@ A library of useful functions to ease working with URL query parameters.
 
 Try the <a href="http://www.woollymittens.nl/useful/default.php?url=urls">tests</a>.
 
-## How to use the script
+## How to include the script
 
 This include can be added to the header or placed inline before the script is invoked.
 
 ```html
-<script src="./js/useful.urls.js"></script>
+<script src="./js/urls.min.js"></script>
 ```
 
-## Functions
+## How to control the script
 
 ### load
 
@@ -53,6 +53,11 @@ Replaces the value of a query parameter in a URL.
 **name : {string}** - Name of a parameter stored as a query parameter.
 
 **value : {string}** - Value to be stored as a query parameter.
+
+## Prerequisites
+
+To concatenate and minify the script yourself, the following prerequisites are required:
++ https://github.com/WoollyMittens/useful-polyfills
 
 ## License
 This work is licensed under a Creative Commons Attribution 3.0 Unported License. The latest version of this and other scripts by the same author can be found at http://www.woollymittens.nl/
