@@ -13,7 +13,7 @@ describe('Expected behaviours of "useful-urls"', function(){
         client.init();
     });
 
-    it('should import values using "load()" inside a browser', function(done){
+    it('should import values using "load()" (browser)', function(done){
         client
             .url(path)
             .execute(function () {
@@ -30,7 +30,7 @@ describe('Expected behaviours of "useful-urls"', function(){
             .call(done);
     });
 
-    it('should import values using "load()" outside a browser', function(done){
+    it('should import values using "load()"', function(done){
 
         var result = usefulUrls.load('http://www.foo.bar/index.html?mystring=a&mynumber=1.5');
         assert(result.mystring === 'a');
@@ -39,7 +39,7 @@ describe('Expected behaviours of "useful-urls"', function(){
         done();
     });
 
-    it('should export values using "save()" outside a browser', function(done){
+    it('should export values using "save()"', function(done){
 
         var result = usefulUrls.save('http://www.foo.bar/index.html', { mystring : 'a', mynumber : 1.5 });
         assert(result === 'http://www.foo.bar/index.html?mystring=a&mynumber=1.5');
@@ -47,7 +47,7 @@ describe('Expected behaviours of "useful-urls"', function(){
         done();
     });
 
-    it('should replace a value using "replace()" outside a browser', function(done){
+    it('should replace a value using "replace()"', function(done){
 
         var result = usefulUrls.replace('http://www.foo.bar/index.html?mystring=a&mynumber=1.5', 'mystring', 'b');
         assert(result === 'http://www.foo.bar/index.html?mystring=b&mynumber=1.5');
