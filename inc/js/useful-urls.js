@@ -337,9 +337,9 @@ var useful = useful || {};
 				return url.replace(name + '=' + old, name + '=' + value);
 			} else {
 				// add the value instead of replacing it
-				nameValue = urls.load(url);
+				nameValue = this.load(url);
 				nameValue[name] = value;
-				return urls.save(url, nameValue);
+				return this.save(url, nameValue);
 			}
 		},
 
