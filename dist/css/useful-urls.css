@@ -2,18 +2,12 @@
 	Example Styling for Useful Functions
 */
 @media all {
-  /* line 5, ../../src/scss/useful-urls.scss */
   .useful-tests dt {
     font-weight: bold;
     display: block;
     margin: 0;
-    padding: 0;
-  }
-
-  /* line 11, ../../src/scss/useful-urls.scss */
+    padding: 0; }
   .useful-tests dd {
     display: block;
     margin: 0 0 1.3em 0;
-    padding: 0;
-  }
-}
+    padding: 0; } }

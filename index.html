@@ -1,57 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8" />
-		<title>useful-urls.js: A library of useful functions to ease working with URL query parameters.</title>
-		<style>
-			html { font-family:Sans-Serif; font-size:75%; height:100%; }
-			body { _height:100%; line-height:180%; margin:0; min-height:100%; padding:1%; }
-			.example { max-width:960px; margin:0 auto; padding:0; clear:both; }
-			.example > article, .example > aside { width:98%; padding:2%; }
-			.example-left > article, .example-left > aside { width:48%; padding:1%; float:left; }
-			.example-right > article, .example-right > aside { width:48%; padding:1%; float:right; }
-		</style>
-		<!--[if lte IE 9]>
-			<meta http-equiv="imagetoolbar" content="no"/>
-			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
-			<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.js"></script>
-		<![endif]-->
+    <title>Redirect to demo</title>
+		<script>document.location.replace('./dist');</script>
 	</head>
 	<body>
-		<section class="example example-right">
-			<article>
-				<h2>URL Library</h2>
-				<p>A library of useful functions to ease working with URL query parameters.</p>
-				<p><a class="button downloadButton" href="http://github.com/WoollyMittens/useful-urls" target="_blank">Download (GitHub)</a></p>
-			</article>
-			<aside>
-
-				<!-- Cut below this -->
-				<style>@import url("./inc/css/useful-urls.css");</style>
-				<script src="./inc/js/useful-urls.js"></script>
-				<div class="useful-tests">
-					<p>
-						The output of these tests is reported using <strong>console.log();</strong>.<br/>
-						Be sure to open the developer console first.
-					</p>
-					<dl>
-						<dt>useful.urls</dt>
-						<dd>
-							<button onclick="console.log(useful.urls.load('http://localhost/?foo=bar&hello=world'))">Decode http://localhost/?foo=bar&hello=world</button><br/>
-						</dd>
-						<dd>
-							<button onclick="console.log(useful.urls.save('http://localhost/', {'foo':'bar', 'hello':'world'}))">Encode {'foo':'bar', 'hello':'world'}</button><br/>
-						</dd>
-						<dd>
-							<button onclick="console.log(useful.urls.replace('http://localhost/?foo=bar&hello=world', 'foo', 'test'))">Update 'foo' to 'test'</button><br/>
-						</dd>
-					</dl>
-				</div>
-				<!-- Cut above this -->
-
-			</aside>
-		</section>
+		<a href="./dist">Start</a>
 	</body>
 </html>
