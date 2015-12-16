@@ -2,7 +2,7 @@
 
 A library of useful functions to ease working with URL query parameters.
 
-Try the <a href="http://www.woollymittens.nl/useful/default.php?url=useful-urls">tests</a>.
+Try the <a href="http://www.woollymittens.nl/default.php?url=useful-urls">tests</a>.
 
 ## How to include the script
 
