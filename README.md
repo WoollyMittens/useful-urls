@@ -1,4 +1,4 @@
-# useful.urls.js: URL Library
+# urls.js: URL Library
 
 A library of useful functions to ease working with URL query parameters.
 
@@ -9,15 +9,7 @@ Try the <a href="http://www.woollymittens.nl/default.php?url=useful-urls">tests<
 This include can be added to the header or placed inline before the script is invoked.
 
 ```html
-<script src="./js/useful-urls.js"></script>
-```
-
-To enable the use of HTML5 tags in Internet Explorer 8 and lower, include *html5.js*.
-
-```html
-<!--[if lte IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+<script src="./js/urls.js"></script>
 ```
 
 ## How to control the script
@@ -25,7 +17,7 @@ To enable the use of HTML5 tags in Internet Explorer 8 and lower, include *html5
 ### load
 
 ```javascript
-data = useful.urls.load(url);
+data = urls.load(url);
 ```
 
 Converts the query parameters from a URL into an object of name-value pairs.
@@ -37,7 +29,7 @@ Converts the query parameters from a URL into an object of name-value pairs.
 ### save
 
 ```javascript
-url = useful.urls.save(path, data);
+url = urls.save(path, data);
 ```
 
 Saves an object of name-value pairs as the query parameters of a URL.
@@ -51,7 +43,7 @@ Saves an object of name-value pairs as the query parameters of a URL.
 ### replace
 
 ```javascript
-url = useful.urls.replace(url, name, value);
+url = urls.replace(url, name, value);
 ```
 
 Replaces the value of a query parameter in a URL.
@@ -76,15 +68,6 @@ The following commands are available for development:
 + `gulp watch` - Continuously recompiles updated files during development sessions.
 + `gulp serve` - Serves the project on a temporary web server at http://localhost:8500/.
 + `gulp php` - Serves the project on a temporary php server at http://localhost:8500/.
-
-## How to test the script
-
-These test uses Selenium from http://docs.seleniumhq.org/
-
-+ `npm install webdriverjs` - Installs the webdriver prerequisite.
-+ `npm install mocha -g` - Installs the prerequisite test framework.
-+ `java -jar /Applications/Selenium/selenium-server-standalone-2.42.2.jar` - Starts Selenium.
-+ `mocha` - Runs the automated tests.
 
 ## License
 
