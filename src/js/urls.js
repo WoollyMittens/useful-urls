@@ -138,6 +138,5 @@ var urls = {
 };
 
 // return as a require.js module
-if (typeof module !== 'undefined') {
-	exports = module.exports = urls;
-}
+if (typeof define != 'undefined') define(['urls'], function () { return urls });
+if (typeof module != 'undefined') module.exports = urls;
