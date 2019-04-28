@@ -9,7 +9,23 @@ Try the <a href="http://www.woollymittens.nl/default.php?url=useful-urls">tests<
 This include can be added to the header or placed inline before the script is invoked.
 
 ```html
-<script src="./js/urls.js"></script>
+<script src="js/urls.js"></script>
+```
+
+Or use [Require.js](https://requirejs.org/).
+
+```js
+requirejs([
+	'js/urls.js'
+], function(urls) {
+	...
+});
+```
+
+Or import into an MVC framework.
+
+```js
+var urls = require('js/urls.js');
 ```
 
 ## How to control the script
