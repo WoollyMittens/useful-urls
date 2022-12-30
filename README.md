@@ -2,8 +2,6 @@
 
 A library of useful functions to ease working with URL query parameters.
 
-Try the <a href="http://www.woollymittens.nl/default.php?url=useful-urls">tests</a>.
-
 ## How to include the script
 
 This include can be added to the header or placed inline before the script is invoked.
